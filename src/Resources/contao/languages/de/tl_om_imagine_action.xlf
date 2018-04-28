@@ -1,0 +1,259 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file datatype="php" original="src/Resources/contao/languages/en/tl_om_imagine_action_action.php" source-language="en" target-language="de">
+        <body>
+            <trans-unit id="tl_om_imagine_action.type.0">
+                <source>Type</source>
+                <target>Typ</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.type.1">
+                <source>Please select a action type.</source>
+                <target>Bitte wählen Sie eine Aktion aus.</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.title.0">
+                <source>Title</source>
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.title.1">
+                <source>Please enter a title.</source>
+                <target>Bitte geben Sie einen Titel ein.</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.watermark.0">
+                <source>Watermark</source>
+                <target>Wasserzeichen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.watermark.1">
+                <source>Please select a watermark.</source>
+                <target>Bitte wählen Sie ein Wasserzeichen aus.</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.position.0">
+                <source>Reference point</source>
+                <target>Bezugspunkt</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.position.1">
+                <source>Please select a reference point.</source>
+                <target>Bitte wählen Sie einen Bezugspunkt.</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.margins.0">
+                <source>Margins</source>
+                <target>Abstand vom Bezugspunkt</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.margins.1">
+                <source>Please specify the x and y distance to the reference point in pixels.</source>
+                <target>Bitte geben Sie den x- und y-Abstand zum Bezugpunkt in Pixel an.</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.effectType.0">
+                <source>Effect</source>
+                <target>Effekt</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.effectType.1">
+                <source>Please select an effect.</source>
+                <target>Bitte wählen Sie einen Effekt aus.</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.color.0">
+                <source>Color</source>
+                <target>Farbe</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.color.1">
+                <source>Please select a color.</source>
+                <target>Bitte wählen Sie ein Farbe aus.</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.sigma.0">
+                <source>Sigma value</source>
+                <target>Abweichung</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.sigma.1">
+                <source>Please enter a deviation value.</source>
+                <target>Bitte geben Sie einen Abweichungswert ein.</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.gamma.0">
+                <source>Gamma value</source>
+                <target>Gammawert</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.gamma.1">
+                <source>Please enter a gamma value.</source>
+                <target>Bitte geben Sie einen Gammawert an.</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.text.0">
+                <source>Text</source>
+                <target>Text</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.text.1">
+                <source>Please enter the text.</source>
+                <target>Bitte geben Sie den Text ein.</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.fontfile.0">
+                <source>Font file</source>
+                <target>Schriftdatei</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.fontfile.1">
+                <source>Please select a font file. (ttf files)</source>
+                <target>Bitte wählen Sie die Schriftdatei aus. (ttf-Dateien)</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.fontsize.0">
+                <source>Font size</source>
+                <target>Schriftgröße</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.fontsize.1">
+                <source>Please enter a font size.</source>
+                <target>Bitte geben Sie die Schriftgröße an.</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.active.0">
+                <source>Activate/Deactivate</source>
+                <target>Aktivieren/Deaktivieren</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.active.1">
+                <source>Activate/Deactivate</source>
+                <target>Aktivieren/Deaktivieren</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.type_legend">
+                <source>Type settings</source>
+                <target>Typ-Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.title_legend">
+                <source>Title settings</source>
+                <target>Titel-Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.watermark_legend">
+                <source>Watermark settings</source>
+                <target>Wasserzeichen-Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.position_legend">
+                <source>Position settings</source>
+                <target>Positionseinstellungen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.effect_legend">
+                <source>Effect settings</source>
+                <target>Effekt-Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.text_legend">
+                <source>Text settings</source>
+                <target>Text-Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.active_legend">
+                <source>Activate/Deactivate</source>
+                <target>Aktivieren/Deaktivieren</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.new.0">
+                <source>New action</source>
+                <target>Neue Aktion</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.new.1">
+                <source>Create a new action</source>
+                <target>Eine neue Aktion erstellen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.edit.0">
+                <source>Edit actions</source>
+                <target>Aktionen bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.edit.1">
+                <source>Edit action ID %s</source>
+                <target>Aktion ID %s bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.copy.0">
+                <source>Copy action ID %s</source>
+                <target>Aktion ID %s duplizieren</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.copy.1">
+                <source>Copy action ID %s</source>
+                <target>Aktion ID %s duplizieren</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.delete.0">
+                <source>Delete action ID %s</source>
+                <target>Aktion ID %s löschen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.delete.1">
+                <source>Delete action ID %s</source>
+                <target>Aktion ID %s löschen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.delete_confirm">
+                <source>Delete action ID %s?</source>
+                <target>Aktion ID %s löschen?</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.toggle.0">
+                <source>Toggle image manipulation ID %s</source>
+                <target>Aktion aktivieren/deaktivieren</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.toggle.1">
+                <source>Toggle action ID %s on/off</source>
+                <target>Aktion aktivieren/deaktivieren</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.show.0">
+                <source>Show details of action ID %s</source>
+                <target>Aktiondetails anzeigen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.show.1">
+                <source>Show details of action ID %s</source>
+                <target>Aktiondetails anzeigen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.positions.top-left">
+                <source>Top left</source>
+                <target>Oben-Links</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.positions.top-center">
+                <source>Top center</source>
+                <target>Oben-Mitte</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.positions.top-right">
+                <source>Top right</source>
+                <target>Oben-Rechts</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.positions.center-left">
+                <source>Center left</source>
+                <target>Mitte-Links</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.positions.center-center">
+                <source>Center center</source>
+                <target>Mitte-Mitte</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.positions.center-right">
+                <source>Center right</source>
+                <target>Mitte-Rechts</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.positions.bottom-left">
+                <source>Bottom left</source>
+                <target>Unten-Links</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.positions.bottom-center">
+                <source>Bottom center</source>
+                <target>Unten-Mitte</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.positions.bottom-right">
+                <source>Bottom right</source>
+                <target>Unten-Rechts</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.types.watermark">
+                <source>Watermark</source>
+                <target>Wasserzeichen</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.types.effect">
+                <source>Effect</source>
+                <target>Effekt</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.types.text">
+                <source>Text</source>
+                <target>Text</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.effectTypes.grayscale">
+                <source>Grayscale</source>
+                <target>In Graustufen umwandeln</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.effectTypes.colorize">
+                <source>Colorize</source>
+                <target>Einfärben</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.effectTypes.blur">
+                <source>Blur</source>
+                <target>Verwischen (Blur)</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.effectTypes.negative">
+                <source>Negative</source>
+                <target>Invertieren (Negativ)</target>
+            </trans-unit>
+            <trans-unit id="tl_om_imagine_action.effectTypes.gamma">
+                <source>Gamma correction</source>
+                <target>Gamma-Korrektur</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

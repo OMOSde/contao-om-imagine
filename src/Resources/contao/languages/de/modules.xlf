@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file datatype="php" original="src/Resources/contao/languages/en/modules.php" source-language="en" target-language="de">
+        <body>
+            <trans-unit id="MOD.tl_om_imagine.0">
+                <source>Image manipulations</source>
+                <target>Bildmanipulationen</target>
+            </trans-unit>
+            <trans-unit id="MOD.tl_om_imagine.title.1">
+                <source>Manage image manipulations</source>
+                <target>Bildmanipulationen verwalten</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
