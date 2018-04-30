@@ -262,7 +262,7 @@ class tl_om_imagine_action extends Backend
             $icon = 'invisible.gif';
         }
 
-        return '<a href="' . $this->addToUrl($href) . '" title="' . specialchars($title) . '"' . $attributes . '>' . $this->generateImage($icon, $label) . '</a> ';
+        return '<a href="' . $this->addToUrl($href) . '" title="' . specialchars($title) . '"' . $attributes . '>' . Image::getHtml($icon, $label, 'data-state="' . ($row['active'] ? 0 : 1)) . '</a> ';
     }
 
 
@@ -277,7 +277,7 @@ class tl_om_imagine_action extends Backend
         // Check permissions to publish
         if (!$this->User->isAdmin && !$this->User->hasAccess('tl_om_imagine_action::active', 'alexf'))
         {
-            $this->log('Not enough permissions to publish/unpublish image manipulation action ID "' . $intId . '"', 'tl_om_imagine_action toggleVisibility', TL_ERROR);
+            \System::getContainer()->get('monolog.logger.contao')->log(LogLevel::ERRO, sprintf('Not enough permissions to publish/unpublish image manipulation action ID "' . $intId . '"', 'tl_om_imagine_action toggleVisibility', $intId));
             $this->redirect('contao/main.php?act=error');
         }
 

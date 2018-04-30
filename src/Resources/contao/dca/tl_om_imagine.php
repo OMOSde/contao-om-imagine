@@ -217,7 +217,6 @@ class tl_om_imagine extends Backend
         {
             // logging & redirect
             \System::getContainer()->get('monolog.logger.contao')->log(LogLevel::ERRO, sprintf('Not enough permissions to publish/unpublish image manipulation ID "%s"', $intId));
-
             $this->redirect('contao/main.php?act=error');
         }
 
