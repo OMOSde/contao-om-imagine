@@ -11,11 +11,26 @@
 
 
 /**
+ * Add stylesheet to the backend
+ */
+if (TL_MODE == 'BE')
+{
+    $GLOBALS['TL_CSS'][] = 'bundles/omosdecontaoomimagine/css/contao-om-imagine.css|static';
+}
+
+
+/**
  * Backend modules
  */
 $GLOBALS['BE_MOD']['system']['tl_om_imagine'] = [
     'tables' => ['tl_om_imagine', 'tl_om_imagine_action'],
 ];
+
+
+/**
+ * Backend form fields
+ */
+$GLOBALS['BE_FFL']['exifWizard'] = 'OMOSde\ContaoOmImagineBundle\ExifWizard';
 
 
 /**

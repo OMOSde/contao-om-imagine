@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+    <file datatype="php" original="src/Resources/contao/languages/en/tl_files.php" source-language="en" target-language="de">
+        <body>
+            <trans-unit id="tl_files.exif.0">
+                <source>Exif data</source>
+                <target>Exif-Daten</target>
+            </trans-unit>
+            <trans-unit id="tl_files.exif.file_not_found">
+                <source>The file could not be found.</source>
+                <target>Die Datei konnte nicht gefunden werden.</target>
+            </trans-unit>
+            <trans-unit id="tl_files.exif.wrong_extension">
+                <source>This file type and directories are not supported. (Supported file types: %s)</source>
+                <target>Dieser Dateityp bzw. Verzeichnisse werden nicht unterstützt. (Unterstützte Dateitypen: %s)</target>
+            </trans-unit>
+            <trans-unit id="tl_files.exif.no_exif_data">
+                <source>No exif data was found.</source>
+                <target>Es wurden kein Exif-Daten gefunden.</target>
+            </trans-unit>
+            <trans-unit id="tl_files.exif.success">
+                <source>Exif data</source>
+                <target>Ausgelesene Exif-Daten</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

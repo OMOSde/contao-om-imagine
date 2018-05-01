@@ -10,6 +10,21 @@
  */
 
 
+/**
+ * Palettes
+ */
+$GLOBALS['TL_DCA']['tl_files']['palettes']['default'] .= ';{exif_legend},exif';
+
+
+/**
+ * Fields
+ */
+$GLOBALS['TL_DCA']['tl_files']['fields']['exif'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_files']['exif'],
+    'inputType' => 'exifWizard'
+];
+
+
 // Edit
 //$GLOBALS['TL_DCA']['tl_files']['select']['buttons_callback'] = array(array('tl_om_watermarks_files', 'addWatermarkButton'));
 
@@ -31,7 +46,7 @@ class tl_om_watermarks_files extends \Contao\Backend
         if (Input::post('FORM_SUBMIT') == 'tl_files' && isset($_POST['watermark']))
         {
             $session = $this->Session->getData();
-            $files  = $session['CURRENT']['IDS'];
+            $files = $session['CURRENT']['IDS'];
 
             $strRoot = $this->Environment->documentRoot . $GLOBALS['TL_CONFIG']['websitePath'] . '/';
 
@@ -55,7 +70,9 @@ class tl_om_watermarks_files extends \Contao\Backend
 
                         closedir($handle);
                     }
-                } else {
+                }
+                else
+                {
                     // not a directory
                     $arrFiles[] = $file;
                 }
