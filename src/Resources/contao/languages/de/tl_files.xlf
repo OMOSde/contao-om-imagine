@@ -16,7 +16,7 @@
             </trans-unit>
             <trans-unit id="tl_files.exif.no_exif_data">
                 <source>No exif data was found.</source>
-                <target>Es wurden kein Exif-Daten gefunden.</target>
+                <target>Es wurden keine Exif-Daten gefunden.</target>
             </trans-unit>
             <trans-unit id="tl_files.exif.success">
                 <source>Exif data</source>
