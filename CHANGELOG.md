@@ -2,6 +2,7 @@
 
 ### 1.1.0 (2018-??-??)
 
+ * Added: Backend buttons to manipulate existing images
  * Added: Show Exif data in the backend file manager
  * Added: Create a CHANGELOG file
  * Fixed: Remove deprecated functions (found by PhpStorm-CodeInspector) 

@@ -112,6 +112,58 @@ class Imagine extends Backend
 
 
     /**
+     * Handle button edit
+     *
+     * @param $arrFiles
+     * @param $intManipulation
+     */
+    public static function handleButtonEdit($arrFiles, $intManipulation)
+    {
+        // do if nothing if no file in array
+        if (count($arrFiles) == 0)
+        {
+            return;
+        }
+
+        // get manipulation
+        $objManipulation = OmImagineModel::findByPk($intManipulation);
+        if (!is_object($objManipulation))
+        {
+            return;
+        }
+
+        // get all active actions for this manipulation and check next if none exists
+        $objActions = OmImagineActionModel::findBy(['pid=?', 'active=1'], [$objManipulation->id], ['order' => 'sorting ASC']);
+        if (!$objActions)
+        {
+            return;
+        }
+
+        // handle all files
+        foreach ($arrFiles as $strFile)
+        {
+            // check if the file exists
+            if (!file_exists($strFile))
+            {
+                continue;
+            }
+
+            // get path info of file
+            $arrPathInfo = pathinfo($strFile);
+
+            // check file extension
+            if (!in_array(strtolower($arrPathInfo['extension']), ['gif', 'jpg', 'png']))
+            {
+                continue;
+            }
+
+            // do it
+            self::handleActions($strFile, $objManipulation, $objActions);
+        }
+    }
+
+
+    /**
      * Handle all manipulation actions
      *
      * @param $strFile

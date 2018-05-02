@@ -38,6 +38,8 @@ $GLOBALS['BE_FFL']['exifWizard'] = 'OMOSde\ContaoOmImagineBundle\ExifWizard';
  */
 $GLOBALS['TL_HOOKS']['postUpload'][] = ['OMOSde\ContaoOmImagineBundle\Hooks', 'handleManipulationsBackend'];
 $GLOBALS['TL_HOOKS']['processFormData'][] = ['OMOSde\ContaoOmImagineBundle\Hooks', 'handleManipulationsFrontend'];
+$GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = ['OMOSde\ContaoOmImagineBundle\Hooks', 'addButtonManipulate'];
+$GLOBALS['TL_HOOKS']['initializeSystem'][] = ['OMOSde\ContaoOmImagineBundle\Hooks', 'handleButtonManipulate'];
 
 
 /**
