@@ -1,4 +1,3 @@
-
 /***** exif widget *****/
 
 .tl_box .widget table.exif {
@@ -6,19 +5,41 @@
     margin: 0 20px 20px 0;
     border-collapse: collapse;
 }
+
 .tl_box .widget table.exif:last-of-type {
     margin: 0 20px 0 0;
 }
+
 .tl_box .widget table.exif th,
 .tl_box .widget table.exif td {
     padding: 6px 10px;
     border: 1px solid #aaa;
 }
+
 .tl_box .widget table.exif th {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .tl_box .widget table.exif + p.tl_help {
     clear: both;
     padding: 3px 0 0;
+}
+
+/***** edit buttons *****/
+
+.tl_submit_container {
+    overflow: hidden;
+}
+.tl_submit_container .contao-om-imagine {
+    display: flex;
+    float: right;
+}
+
+.tl_submit_container .contao-om-imagine select {
+    margin-right: 4px;
+    margin-left: 32px;
+}
+.tl_submit_container .contao-om-imagine button {
+    white-space: nowrap;
 }
