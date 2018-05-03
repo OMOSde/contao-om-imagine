@@ -262,7 +262,7 @@ class tl_om_imagine_action extends Backend
             $icon = 'invisible.gif';
         }
 
-        return '<a href="' . $this->addToUrl($href) . '" title="' . specialchars($title) . '"' . $attributes . '>' . Image::getHtml($icon, $label, 'data-state="' . ($row['active'] ? 0 : 1)) . '</a> ';
+        return '<a href="' . $this->addToUrl($href) . '" title="' . specialchars($title) . '"' . $attributes . '>' . Image::getHtml($icon, $label, 'data-state="' . ($row['active'] ? 0 : 1) . '"') . '</a> ';
     }
 
 
