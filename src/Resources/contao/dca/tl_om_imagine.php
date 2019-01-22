@@ -111,7 +111,7 @@ $GLOBALS['TL_DCA']['tl_om_imagine'] = [
         'directory' => [
             'label'     => &$GLOBALS['TL_LANG']['tl_om_imagine']['directory'],
             'inputType' => 'fileTree',
-            'eval'      => ['multiple' => true, 'fieldType' => 'checkbox', 'files' => false, 'mandatory' => true],
+            'eval'      => ['multiple' => true, 'fieldType' => 'checkbox', 'files' => false, 'mandatory' => false],
             'sql'       => "blob NULL"
         ],
         'addSave'      => [

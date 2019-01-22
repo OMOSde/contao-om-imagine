@@ -48,7 +48,7 @@ class Imagine extends Backend
         }
 
         // get all active manipulations and do nothing if none exists
-        $objImagine = OmImagineModel::findBy('published', 1);
+        $objImagine = OmImagineModel::findBy(['published=?', 'directory<>""'], [1]);
         if (!is_object($objImagine))
         {
             return;
@@ -64,8 +64,14 @@ class Imagine extends Backend
                 continue;
             }
 
-            // create an array with the target directories
+            // check for directories
             $objDirectories = \FilesModel::findMultipleByIds(deserialize($objManipulation->directory, true));
+            if (!$objDirectories)
+            {
+                continue;
+            }
+
+            // create an array with the target directories
             foreach ($objDirectories as $directory)
             {
                 $arrDirectories[] = $directory->path;
@@ -90,7 +96,7 @@ class Imagine extends Backend
                 $arrPathInfo = pathinfo($strFile);
 
                 // check file extension
-                if (!in_array($arrPathInfo['extension'], ['gif', 'jpg', 'png']))
+                if (!in_array(strtolower($arrPathInfo['extension']), ['gif', 'jpg', 'png']))
                 {
                     continue;
                 }
