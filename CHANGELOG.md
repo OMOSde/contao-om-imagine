@@ -1,6 +1,6 @@
 # Contao bundle 'omosde/contao-om-imagine' change log
 
-### 1.1.0 (2018-??-??)
+### 1.1.0 (2019-01-22)
 
  * Added: Backend buttons to manipulate existing images
  * Added: Show Exif data in the backend file manager
