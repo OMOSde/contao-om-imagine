@@ -17,12 +17,6 @@ namespace OMOSde\ContaoOmImagineBundle;
 
 
 /**
- * Use
- */
-use \Wa72\HtmlPageDom\HtmlPageCrawler;
-
-
-/**
  * Class Hooks
  *
  * @copyright OMOS.de 2018 <http://www.omos.de>
@@ -154,10 +148,6 @@ class Hooks extends \Backend
         $strHtml .= sprintf('</select><button type="submit" name="manipulate" id="manipulate" class="tl_submit" accesskey="s">%s</button></div>', $GLOBALS['TL_LANG']['MSC'][$strButtonText]);
 
         // add html to dom
-        $objCrawler = HtmlPageCrawler::create($strContent);
-        $objCrawler->filter('.tl_submit_container')->append($strHtml);
-
-        // return new html
-        return $objCrawler->saveHTML();
+        return substr_replace($strContent, $strHtml, strpos($strContent, '</div>', strpos($strContent, 'tl_submit_container')), 0);
     }
 }

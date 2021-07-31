@@ -1,5 +1,9 @@
 # Contao bundle 'omosde/contao-om-imagine' change log
 
+### 1.1.1 (2021-07-31)
+
+ * Changed: Remove dependency 'wa72/htmlpagedom' (only 1 use)
+
 ### 1.1.0 (2019-01-22)
 
  * Added: Backend buttons to manipulate existing images
