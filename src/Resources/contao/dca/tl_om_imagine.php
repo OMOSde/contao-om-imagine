@@ -9,6 +9,7 @@
  * @license   LGPL 3.0+
  */
 
+\System::loadLanguageFile('tl_om_imagine');
 
 /**
  * Table tl_om_imagine
