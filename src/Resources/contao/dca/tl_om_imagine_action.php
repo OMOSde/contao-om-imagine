@@ -9,6 +9,7 @@
  * @license   LGPL 3.0+
  */
 
+\System::loadLanguageFile('tl_om_imagine_action');
 
 /**
  * Table tl_om_imagine_action
@@ -114,7 +115,7 @@ $GLOBALS['TL_DCA']['tl_om_imagine_action'] = [
             'label'     => &$GLOBALS['TL_LANG']['tl_om_imagine_action']['type'],
             'inputType' => 'select',
             'options'   => ['watermark', 'effect', 'text'],
-            'reference' => $GLOBALS['TL_LANG']['tl_om_imagine_action']['types'],
+            'reference' => &$GLOBALS['TL_LANG']['tl_om_imagine_action']['types'],
             'eval'      => ['mandatory' => true, 'includeBlankOption' => true, 'submitOnChange' => true, 'chosen' => false, 'tl_class' => 'w50'],
             'sql'       => "varchar(24) NOT NULL default ''"
         ],
@@ -134,7 +135,7 @@ $GLOBALS['TL_DCA']['tl_om_imagine_action'] = [
             'label'     => &$GLOBALS['TL_LANG']['tl_om_imagine_action']['effectType'],
             'inputType' => 'select',
             'options'   => ['grayscale', 'colorize', 'blur', 'negative', 'gamma'],
-            'reference' => $GLOBALS['TL_LANG']['tl_om_imagine_action']['effectTypes'],
+            'reference' => &$GLOBALS['TL_LANG']['tl_om_imagine_action']['effectTypes'],
             'eval'      => ['mandatory' => true, 'includeBlankOption' => true, 'submitOnChange' => true, 'chosen' => false, 'tl_class' => 'w50'],
             'sql'       => "varchar(32) NOT NULL default ''"
         ],
