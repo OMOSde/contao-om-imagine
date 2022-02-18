@@ -79,14 +79,14 @@ class Hooks extends \Backend
     public function handleButtonManipulate()
     {
         // handle button edit
-        if ($_POST['FORM_SUBMIT'] == 'tl_files' && isset($_POST['manipulate']))
+        if (is_array($_POST) && isset($_POST['FORM_SUBMIT']) && $_POST['FORM_SUBMIT'] == 'tl_files' && isset($_POST['manipulate']))
         {
             // manipulate the selected image
             Imagine::handleButtonEdit([TL_ROOT.'/'.$_GET['id']], $_POST['manipulation']);
         }
 
         // handle button edit all
-        if ($_POST['FORM_SUBMIT'] == 'tl_select' && isset($_POST['manipulate']))
+        if (is_array($_POST) && isset($_POST['FORM_SUBMIT']) && $_POST['FORM_SUBMIT'] == 'tl_select' && isset($_POST['manipulate']))
         {
             if (is_array($_POST['IDS']) && !empty($_POST['IDS']))
             {
