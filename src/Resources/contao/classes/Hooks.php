@@ -15,6 +15,8 @@
  */
 namespace OMOSde\ContaoOmImagineBundle;
 
+use \OMOSde\ContaoOmImagineBundle\Imagine;
+
 
 /**
  * Class Hooks
@@ -24,12 +26,16 @@ namespace OMOSde\ContaoOmImagineBundle;
  */
 class Hooks extends \Backend
 {
+    
+    protected Imagine $imagine;
+    
     /**
      * Hooks constructor.
      */
     public function __construct()
     {
         parent::__construct();
+        $this->imagine = new Imagine();
     }
 
 
@@ -52,7 +58,7 @@ class Hooks extends \Backend
             }
 
             // execute manipulations
-            \OMOSde\ContaoOmImagineBundle\Imagine::handleFiles($arrFormFiles, 'frontend');
+            $this->imagine->handleFiles($arrFormFiles, 'frontend');
         }
     }
 
@@ -68,7 +74,7 @@ class Hooks extends \Backend
         if (count($arrFiles) > 0)
         {
             // execute manipulations
-            \OMOSde\ContaoOmImagineBundle\Imagine::handleFiles($arrFiles, 'backend');
+            $this->imagine->handleFiles($arrFiles, 'backend');
         }
     }
 
@@ -82,7 +88,7 @@ class Hooks extends \Backend
         if (is_array($_POST) && isset($_POST['FORM_SUBMIT']) && $_POST['FORM_SUBMIT'] == 'tl_files' && isset($_POST['manipulate']))
         {
             // manipulate the selected image
-            Imagine::handleButtonEdit([TL_ROOT.'/'.$_GET['id']], $_POST['manipulation']);
+            $this->imagine->handleButtonEdit([TL_ROOT.'/'.$_GET['id']], $_POST['manipulation']);
         }
 
         // handle button edit all
@@ -96,7 +102,7 @@ class Hooks extends \Backend
                 }
 
                 // manipulate the selected files
-                Imagine::handleButtonEdit($arrFiles, $_POST['manipulation']);
+                $this->imagine->handleButtonEdit($arrFiles, $_POST['manipulation']);
 
                 // redirect
                 $arrUrlParts = explode('&', \Environment::get('request'));
