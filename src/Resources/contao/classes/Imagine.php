@@ -39,7 +39,7 @@ class Imagine extends Backend
      * @param $arrFiles
      * @param $strType
      */
-    public static function handleFiles($arrFiles, $strType)
+    public function handleFiles($arrFiles, $strType)
     {
         // do if nothing if no file in array
         if (count($arrFiles) == 0)
@@ -123,7 +123,7 @@ class Imagine extends Backend
      * @param $arrFiles
      * @param $intManipulation
      */
-    public static function handleButtonEdit($arrFiles, $intManipulation)
+    public function handleButtonEdit($arrFiles, $intManipulation)
     {
         // do if nothing if no file in array
         if (count($arrFiles) == 0)
@@ -164,7 +164,7 @@ class Imagine extends Backend
             }
 
             // do it
-            self::handleActions($strFile, $objManipulation, $objActions);
+            $this->handleActions($strFile, $objManipulation, $objActions);
         }
     }
 
@@ -184,17 +184,17 @@ class Imagine extends Backend
             {
                 // handle type watermark
                 case 'watermark':
-                    self::addWatermark($strFile, $objManipulation, $objAction);
+                    $this->addWatermark($strFile, $objManipulation, $objAction);
                     break;
 
                 // handle type effect
                 case 'effect':
-                    self::addEffect($strFile, $objManipulation, $objAction);
+                    $this->addEffect($strFile, $objManipulation, $objAction);
                     break;
 
                 // handle type text
                 case 'text':
-                    self::addText($strFile, $objManipulation, $objAction);
+                    $this->addText($strFile, $objManipulation, $objAction);
                     break;
 
                 default:
