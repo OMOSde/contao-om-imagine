@@ -110,7 +110,7 @@ class Imagine extends Backend
                         continue;
                     }
 
-                    self::handleActions($strFile, $objManipulation, $objActions);
+                    (new Imagine)->handleActions($strFile, $objManipulation, $objActions);
                 }
             }
         }
@@ -164,7 +164,7 @@ class Imagine extends Backend
             }
 
             // do it
-            self::handleActions($strFile, $objManipulation, $objActions);
+            (new Imagine)->handleActions($strFile, $objManipulation, $objActions);
         }
     }
 
@@ -184,17 +184,17 @@ class Imagine extends Backend
             {
                 // handle type watermark
                 case 'watermark':
-                    self::addWatermark($strFile, $objManipulation, $objAction);
+                    $this->addWatermark($strFile, $objManipulation, $objAction);
                     break;
 
                 // handle type effect
                 case 'effect':
-                    self::addEffect($strFile, $objManipulation, $objAction);
+                    $this->addEffect($strFile, $objManipulation, $objAction);
                     break;
 
                 // handle type text
                 case 'text':
-                    self::addText($strFile, $objManipulation, $objAction);
+                    $this->addText($strFile, $objManipulation, $objAction);
                     break;
 
                 default:

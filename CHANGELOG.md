@@ -1,5 +1,9 @@
 # Contao bundle 'omosde/contao-om-imagine' change log
 
+### 1.1.4 (2023-06-12)
+
+ * Fixed: A PHP 8 error
+
 ### 1.1.1 (2021-07-31)
 
  * Changed: Remove dependency 'wa72/htmlpagedom' (only 1 use)

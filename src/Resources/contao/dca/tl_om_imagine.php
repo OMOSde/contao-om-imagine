@@ -68,7 +68,7 @@ $GLOBALS['TL_DCA']['tl_om_imagine'] = [
                 'label'      => &$GLOBALS['TL_LANG']['tl_om_imagine']['delete'],
                 'href'       => 'act=delete',
                 'icon'       => 'delete.gif',
-                'attributes' => 'onclick="if(!confirm(\'' . $GLOBALS['TL_LANG']['tl_om_imagine']['delete_confirm'] . '\'))return false;Backend.getScrollOffset()"'
+                'attributes' => 'onclick="if(!confirm(\'' . ($GLOBALS['TL_LANG']['tl_om_imagine']['delete_confirm'] ?? null) . '\'))return false;Backend.getScrollOffset()"'
             ],
             'toggle' => [
                 'label'           => &$GLOBALS['TL_LANG']['tl_om_imagine']['toggle'],
