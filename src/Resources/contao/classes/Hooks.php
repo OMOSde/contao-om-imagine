@@ -43,7 +43,7 @@ class Hooks extends \Backend
     public function handleManipulationsFrontend($arrPost, $arrForm, $arrFiles)
     {
         // check file array
-        if (count($arrFiles) > 0)
+        if (\is_array($arrFiles) && count($arrFiles) > 0)
         {
             // put files in array
             foreach ($arrFiles as $file)
@@ -65,7 +65,7 @@ class Hooks extends \Backend
     public function handleManipulationsBackend($arrFiles)
     {
         // check file array
-        if (count($arrFiles) > 0)
+        if (\is_array($arrFiles) && count($arrFiles) > 0)
         {
             // execute manipulations
             \OMOSde\ContaoOmImagineBundle\Imagine::handleFiles($arrFiles, 'backend');

@@ -1,5 +1,9 @@
 # Contao bundle 'omosde/contao-om-imagine' change log
 
+### 1.1.5 (2023-11-03)
+
+ * Fixed: A PHP 8 error
+
 ### 1.1.4 (2023-06-12)
 
  * Fixed: A PHP 8 error
